@@ -59,7 +59,7 @@ const Slider = () => {
             style={{ backgroundImage: `url("${slide.bg}")` }}
           >
             <div className="bg-gradient-to-t from-black/80 to-black/80">
-              <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between min-h-screen text-white">
+              <div className=" px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between min-h-screen text-white">
                 {/* Text Content - Slides from left */}
                 <div className="flex flex-col justify-center gap-4 md:gap-6 lg:gap-8 w-full lg:w-8/12 py-10 lg:py-20 lg:ml-10 xl:ml-20">
                   <motion.div

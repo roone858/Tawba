@@ -33,7 +33,7 @@ const socialMedia = [
 const TopBar = () => {
   return (
     <div className="top-area bg-title  ">
-      <div className="menu-top text-white mx-18">
+      <div className="menu-top text-white mx-auto px-4 sm:px-6 lg:px-10">
         <div className="py-3 mx-auto">
           <div className="flex items-center sm:justify-between justify-center">
             <div className="th-social flex gap-3 items-center justify-between">
@@ -54,7 +54,7 @@ const TopBar = () => {
               ))}
             </div>
             <div className="sm:flex items-center  hidden  gap-5 contact">
-              <a className="flex items-center gap-2 pl-4 border-l border-asfar/20 ml-4" href="tel:+88001152256">
+              <a className="flex items-center gap-2 lg:pl-4 lg:border-l border-asfar/20 lg:ml-4" href="tel:+88001152256">
                 {/* <i className="icon-btn fas fa-phone"></i>(88) 0011-52256 */}
                 <FontAwesomeIcon
                   className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-asfar"
@@ -63,7 +63,7 @@ const TopBar = () => {
                 <span> (88) 0011-52256</span>
               </a>
               <a
-                className="flex items-center gap-2 pl-4 border-l border-asfar/20 ml-4"
+                className="hidden lg:flex items-center gap-2 pl-4 border-l border-asfar/20 ml-4"
                 href="mailto:infomail123@domain.com"
               >
                 {/* <i className="icon-btn fas fa-envelope"></i> */}
@@ -75,7 +75,7 @@ const TopBar = () => {
               </a>
               <a
                 //  className="header-link d-none d-xl-inline-block"
-                className="flex items-center gap-2"
+                className="hidden lg:flex items-center gap-2"
                 href="https://www.google.com/maps"
               >
                 {/* <i className="icon-btn fas fa-location-dot"></i> */}
