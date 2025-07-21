@@ -7,7 +7,16 @@ export default function Home() {
     <div className="h-[4000px]">
       <TopBar />
       <Navbar />
-      <Slider />
+      <div className="flex">
+        <div
+          style={{
+            clipPath:
+              "polygon(100% 0, 100% calc(100% - 100px), calc(100% - 140px) 100%, 0 100%, 0 0)",
+          }}
+          className="hidden lg:block relative bg-asfar w-30 h-96  "
+        ></div>
+        <Slider />
+      </div>
     </div>
   );
 }
