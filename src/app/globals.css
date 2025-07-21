@@ -6,6 +6,33 @@
 }
 
 @theme inline {
+  --color-theme: #374868;
+  --color-asfar: #ffd54f;
+  --color-title: #03060e;
+  --body-color: #4e4e4e;
+  --smoke-color: #f0f0f0;
+  --smoke-color2: #f8f8f8;
+  --smoke-color3: #c5dacc;
+  --smoke-color4: #e9f5ed;
+  --black-color: #000000;
+  --black-color2: #0a0a0a;
+  --gray-color: #d8dde1;
+  --white-color: #ffffff;
+  --light-color: #b7bec8;
+  --yellow-color: #ffb539;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --th-border-color: #e0e0e0;
+  --title-font: "Playfair Display", serif;
+  --body-font: "Inter", serif;
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1620px;
+  --container-gutters: 24px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
+  --color-midnight: #4e4e4e;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
