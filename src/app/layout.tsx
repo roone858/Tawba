@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import "./globals.css";
+import { Cairo } from 'next/font/google'
 
+const cairo = Cairo({
+  subsets: ['latin'],
+  weight: ['200', '400', '700', '1000'], // choose the weights you want
+  variable: '--font-cairo',             // optional: custom CSS variable
+})
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cairo.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
