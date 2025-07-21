@@ -1,39 +1,89 @@
 import React from "react";
 import Image from "next/image";
 const Navbar = () => {
-     // clip-path: polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%);
+ 
   return (
-    <nav>
-      <div className=" flex justify-between items-center py-5 mx-18">
+    <nav className="bg-asfar z-10 sticky top-0">
+      <div className=" flex justify-between items-center py-4 mx-18  ">
         <div className="logo flex justify-between items-center">
           <Image src="/logo 11.png" alt="Logo" width={64} height={64} />
           <div className="flex flex-col pr-3">
-            <span className="text-2xl font-bold text-title">تــــــوبـــــة</span>
+            <span className="text-2xl font-bold text-title">
+              تــــــوبـــــة
+            </span>
             <span>مفاتيح الحياة السعيدة</span>
           </div>
         </div>
         <div className="nav-links">
           <ul className="flex items-center gap-5">
             <li>
-              <a href="http://" className="text-title font-medium text-lg" target="_blank" rel="noopener noreferrer">الرئيسية</a>
+              <a
+                href="http://"
+                className="text-title font-medium text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                الرئيسية
+              </a>
             </li>
             <li>
-              <a href="http://" className="text-title font-medium text-lg" target="_blank" rel="noopener noreferrer">من نحن</a>
+              <a
+                href="http://"
+                className="text-title font-medium text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                من نحن
+              </a>
             </li>
             <li>
-              <a href="http://" className="text-title font-medium text-lg" target="_blank" rel="noopener noreferrer">الخدمات</a>
+              <a
+                href="http://"
+                className="text-title font-medium text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                الخدمات
+              </a>
             </li>
             <li>
-              <a href="http://" className="text-title font-medium text-lg" target="_blank" rel="noopener noreferrer">المناهج العلمية</a>
+              <a
+                href="http://"
+                className="text-title font-medium text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                المناهج العلمية
+              </a>
             </li>
             <li>
-              <a href="http://" className="text-title font-medium text-lg" target="_blank" rel="noopener noreferrer">الصفحات</a>
+              <a
+                href="http://"
+                className="text-title font-medium text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                الصفحات
+              </a>
             </li>
             <li>
-              <a href="http://" className="text-title font-medium text-lg" target="_blank" rel="noopener noreferrer">اتصبا بنا</a>
+              <a
+                href="http://"
+                className="text-title font-medium text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                اتصبا بنا
+              </a>
             </li>
           </ul>
         </div>
+        <div
+          className="absolute after: bg-white h-full w-[50%] left-0 -z-10"
+          style={{
+            clipPath: "polygon(0 0, calc(100% - 100px) 0%, 100% 100%, 0% 100%)"
+          }}
+        ></div>
       </div>
     </nav>
   );
