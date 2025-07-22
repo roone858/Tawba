@@ -55,13 +55,13 @@ const Slider = () => {
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className="bg-cover bg-center"
+            className="bg-center bg-cover  "
             style={{ backgroundImage: `url("${slide.bg}")` }}
           >
             <div className="bg-gradient-to-t from-black/80 to-black/80">
               <div className=" px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between min-h-screen text-white">
                 {/* Text Content - Slides from left */}
-                <div className="flex flex-col justify-center gap-4 md:gap-6 lg:gap-8 w-full lg:w-8/12 py-10 lg:py-20 lg:ml-10 xl:ml-20">
+                <div className="flex flex-col justify-center gap-4 md:gap-6 lg:gap-8 w-full lg:w-8/12 py-20 lg:py-34 lg:ml-10 xl:ml-20">
                   <motion.div
                     key={`title-${activeIndex}`}
                     initial="hidden"
@@ -128,14 +128,14 @@ const Slider = () => {
                 </div>
 
                 {/* Image - Slides from bottom */}
-                <div className="w-full lg:w-4/12 flex items-end justify-center lg:justify-end mt-8 lg:mt-0">
+                <div className="w-full lg:w-5/12 flex items-end justify-center lg:justify-end mt-8 lg:mt-0">
                   <motion.div
                     key={`image-${activeIndex}`}
                     initial="hidden"
                     animate="visible"
                     variants={slideFromBottom}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+                    className="w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px]"
                   >
                     <Image
                       src={slide.image}
