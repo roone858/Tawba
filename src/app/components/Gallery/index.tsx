@@ -7,16 +7,17 @@ const Gallery = () => {
     <section>
       <div className="mx-auto py-28 px-4 sm:px-6 lg:px-10">
         <div className="img-box4">
-          <div className="flex w-full  gap-8">
+          <div className="flex w-full flex-col sm:flex-row gap-8">
             <div className="img-wrapp flex flex-col flex-1/2 gap-8">
-              <div className="img1 global-img overflow-hidden " >
+              <div className="img1 global-img overflow-hidden rounded-2xl ">
                 <GlareHover
                   glareColor="#ffffff"
-                  glareOpacity={0.3}
+                  glareOpacity={0.4}
                   glareAngle={-30}
                   glareSize={300}
-                  transitionDuration={800}
+                  transitionDuration={1500}
                   playOnce={false}
+                  className="hover:scale-125 transform transition-all duration-1500"
                 >
                   <Image
                     src="/about_4_1.jpg"
@@ -27,14 +28,15 @@ const Gallery = () => {
                   />
                 </GlareHover>
               </div>
-              <div className="img2 global-img overflow-hidden " >
+              <div className="img2 global-img overflow-hidden rounded-2xl ">
                 <GlareHover
                   glareColor="#ffffff"
-                  glareOpacity={0.3}
+                  glareOpacity={0.4}
                   glareAngle={-30}
                   glareSize={300}
-                  transitionDuration={800}
+                  transitionDuration={1500}
                   playOnce={false}
+                  className="hover:scale-125 transform transition-all duration-1500"
                 >
                   <Image
                     src="/about_4_2.jpg"
@@ -47,15 +49,15 @@ const Gallery = () => {
               </div>
             </div>
             <div className="img-wrapp flex flex-col flex-1/2 gap-8">
-              <div className="img3 global-img overflow-hidden ">
+              <div className="img3 global-img overflow-hidden rounded-2xl ">
                 <GlareHover
                   glareColor="#ffffff"
-                  glareOpacity={0.3}
+                  glareOpacity={0.4}
                   glareAngle={-30}
                   glareSize={300}
-                  transitionDuration={800}
+                  transitionDuration={1500}
                   playOnce={false}
-                  className="hover:scale-110 transform transition-all duration-700"
+                  className="hover:scale-125 transform transition-all duration-1500"
                 >
                   <Image
                     src="/about_4_3.jpg"
@@ -66,15 +68,15 @@ const Gallery = () => {
                   />
                 </GlareHover>
               </div>
-              <div className="img4 global-img overflow-hidden ">
+              <div className="img4 global-img overflow-hidden rounded-2xl  ">
                 <GlareHover
                   glareColor="#ffffff"
-                  glareOpacity={0.3}
+                  glareOpacity={0.4}
                   glareAngle={-30}
                   glareSize={300}
-                  transitionDuration={800}
+                  transitionDuration={1500}
                   playOnce={false}
-                  className="border-0"
+                  className="hover:scale-125 transform transition-all duration-1500"
                 >
                   <Image
                     src="/about_4_4.jpg"
