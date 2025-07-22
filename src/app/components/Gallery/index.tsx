@@ -5,11 +5,11 @@ import GlareHover from "../GlareHover";
 const Gallery = () => {
   return (
     <section>
-      <div className="col-xxl-6">
+      <div className="mx-auto py-28 px-4 sm:px-6 lg:px-10">
         <div className="img-box4">
-          <div className="img-box4-area">
-            <div className="img-wrapp">
-              <div className="img1 global-img">
+          <div className="flex w-full  gap-8">
+            <div className="img-wrapp flex flex-col flex-1/2 gap-8">
+              <div className="img1 global-img overflow-hidden " >
                 <GlareHover
                   glareColor="#ffffff"
                   glareOpacity={0.3}
@@ -18,17 +18,17 @@ const Gallery = () => {
                   transitionDuration={800}
                   playOnce={false}
                 >
-                   <Image
-                  src="/about_4_1.jpg"
-                  alt="About 1"
-                  width={500}
-                  height={500}
-                />
+                  <Image
+                    src="/about_4_1.jpg"
+                    alt="About 1"
+                    className="object-cover bg-cover w-full "
+                    width={500}
+                    height={500}
+                  />
                 </GlareHover>
-              
               </div>
-              <div className="img2 global-img">
-                 <GlareHover
+              <div className="img2 global-img overflow-hidden " >
+                <GlareHover
                   glareColor="#ffffff"
                   glareOpacity={0.3}
                   glareAngle={-30}
@@ -36,35 +36,38 @@ const Gallery = () => {
                   transitionDuration={800}
                   playOnce={false}
                 >
-                   <Image
-                  src="/about_4_2.jpg"
-                  alt="About 1"
-                  width={500}
-                  height={500}
-                />
+                  <Image
+                    src="/about_4_2.jpg"
+                    alt="About 1"
+                    className="object-cover bg-cover w-full "
+                    width={500}
+                    height={500}
+                  />
                 </GlareHover>
               </div>
             </div>
-            <div className="img-wrapp">
-              <div className="img3 global-img">
-            <GlareHover
+            <div className="img-wrapp flex flex-col flex-1/2 gap-8">
+              <div className="img3 global-img overflow-hidden ">
+                <GlareHover
                   glareColor="#ffffff"
                   glareOpacity={0.3}
                   glareAngle={-30}
                   glareSize={300}
                   transitionDuration={800}
                   playOnce={false}
+                  className="hover:scale-110 transform transition-all duration-700"
                 >
-                   <Image
-                  src="/about_4_3.jpg"
-                  alt="About 1"
-                  width={500}
-                  height={500}
-                />
+                  <Image
+                    src="/about_4_3.jpg"
+                    alt="About 1"
+                    className="object-cover bg-cover w-full "
+                    width={500}
+                    height={500}
+                  />
                 </GlareHover>
               </div>
-              <div className="img4 global-img">
-                 <GlareHover
+              <div className="img4 global-img overflow-hidden ">
+                <GlareHover
                   glareColor="#ffffff"
                   glareOpacity={0.3}
                   glareAngle={-30}
@@ -73,16 +76,17 @@ const Gallery = () => {
                   playOnce={false}
                   className="border-0"
                 >
-                   <Image
-                  src="/about_4_4.jpg"
-                  alt="About 1"
-                  width={500}
-                  height={500}
-                />
+                  <Image
+                    src="/about_4_4.jpg"
+                    alt="About 1"
+                    className="object-cover bg-cover w-full "
+                    width={500}
+                    height={500}
+                  />
                 </GlareHover>
               </div>
             </div>
-            <div className="discount-wrapp">
+            {/* <div className="discount-wrapp">
               <div className="logo">
                 <Image
                   src="/assets/img/small-logo2.svg"
@@ -129,7 +133,7 @@ const Gallery = () => {
                   <span className="char34">n</span>
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
