@@ -54,21 +54,21 @@ const TopBar = () => {
               ))}
             </div>
             <div className="sm:flex items-center  hidden  gap-5 contact">
-              <a className="flex items-center gap-2 lg:pl-4 lg:border-l border-asfar/20 lg:ml-4" href="tel:+88001152256">
+              <a className="flex items-center gap-2 lg:pl-4 lg:border-l border-lemon /20 lg:ml-4" href="tel:+88001152256">
                 {/* <i className="icon-btn fas fa-phone"></i>(88) 0011-52256 */}
                 <FontAwesomeIcon
-                  className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-asfar"
+                  className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-lemon "
                   icon={faPhone}
                 />
                 <span> (88) 0011-52256</span>
               </a>
               <a
-                className="hidden lg:flex items-center gap-2 pl-4 border-l border-asfar/20 ml-4"
+                className="hidden lg:flex items-center gap-2 pl-4 border-l border-lemon /20 ml-4"
                 href="mailto:infomail123@domain.com"
               >
                 {/* <i className="icon-btn fas fa-envelope"></i> */}
                 <FontAwesomeIcon
-                  className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-asfar"
+                  className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-lemon "
                   icon={faEnvelope}
                 />
                 infomail123@domain.com
@@ -80,7 +80,7 @@ const TopBar = () => {
               >
                 {/* <i className="icon-btn fas fa-location-dot"></i> */}
                 <FontAwesomeIcon
-                  className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-asfar"
+                  className="rounded-full border border-midnight p-2.5  aspect-square text-title bg-lemon "
                   icon={faLocationDot}
                 />
                 25 Street, City Road, USA

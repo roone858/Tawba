@@ -113,7 +113,7 @@ const Slider = () => {
                     transition={{ duration: 0.6, delay: 0.8 }}
                     className="flex flex-col sm:flex-row gap-3 sm:gap-5 mt-4 justify-center lg:justify-start"
                   >
-                    <button className="px-4 sm:px-6 py-2 sm:py-3 bg-asfar text-title rounded shadow flex items-center justify-center">
+                    <button className="px-4 sm:px-6 py-2 sm:py-3 bg-lemon  text-title rounded shadow flex items-center justify-center">
                       <FontAwesomeIcon className="pl-2" icon={faPlay} />
                       القران الكريم كاملا
                     </button>

@@ -34,7 +34,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="bg-asfar z-10 sticky top-0">
+    <nav className="bg-lemon  z-10 sticky top-0">
       <div className=" mx-auto px-4 sm:px-6 lg:px-10">
         <div className=" flex justify-between items-center py-4 ">
           <div className="logo flex  items-center">
@@ -53,7 +53,7 @@ const Navbar = () => {
                   <a
                     href={link.url}
                     className={
-                      "text-title font-medium text-base lg:text-lg hover:text-asfar transition"
+                      "text-title font-medium text-base lg:text-lg hover:text-lemon  transition"
                     }
                     target="_blank"
                     rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const Navbar = () => {
             </ul>
           </div>
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center  bg-fahmi p-2 rounded-lg">
+          <div className="md:hidden flex items-center  bg-deep-steel p-2 rounded-lg">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
@@ -101,7 +101,7 @@ const Navbar = () => {
           <div
             className={`md:hidden ${
               isMenuOpen ? "absolute" : "hidden"
-            } bg-asfar pb-4 h-screen z-20 top-0 right-0 w-2xs shadow`}
+            } bg-lemon  pb-4 h-screen z-20 top-0 right-0 w-2xs shadow`}
           >
             <ul className="flex flex-col  space-y-3">
               <li>

@@ -6,8 +6,8 @@
 }
 
 @theme inline {
-  --color-fahmi: #374868;
-  --color-asfar: #ffd54f;
+  --color-deep-steel: #374868;
+  --color-lemon: #ffd54f;
   --color-title: #03060e;
   --body-color: #4e4e4e;
   --smoke-color: #f0f0f0;
@@ -37,10 +37,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -50,5 +49,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-     font-family: var(--font-cairo), sans-serif;
+  font-family: var(--font-cairo), sans-serif;
 }
