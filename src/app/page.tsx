@@ -1,3 +1,4 @@
+import About from "./components/AboutSection";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
@@ -18,7 +19,8 @@ export default function Home() {
         ></div>
         <Slider />
       </div>
-      <Gallery/>
+      <Gallery />     
+      <About />
     </div>
   );
 }
