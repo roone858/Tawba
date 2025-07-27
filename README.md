@@ -3,6 +3,10 @@
 
 ![شعار المركز](public/logo%2011.png)
 
+## 🌐 رابط التطبيق الحي | Live Demo
+**تم النشر على Vercel:**  
+🔗 [https://tawba-center.vercel.app](https://tawba-center.vercel.app)
+
 ## لقطة الشاشة | Screenshot
 
 ![واجهة الصفحة الرئيسية](screenshots/home.png)  
