@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Pillars from "./components/PillarsSection";
 import ServicesSection from "./components/ServicesSection";
 import Slider from "./components/Slider";
+import SupportSection from "./components/SupportSection";
+import Testimonials from "./components/TestimonialsSection";
 import TopBar from "./components/TopBar";
 
 export default function Home() {
@@ -24,7 +26,9 @@ export default function Home() {
       <Gallery />
       <About />
       <Pillars />
-      <ServicesSection/>
+      <ServicesSection />
+      <SupportSection />
+      <Testimonials />
     </div>
   );
 }
