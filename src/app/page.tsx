@@ -1,4 +1,6 @@
 import About from "./components/AboutSection";
+import BlogSection from "./components/BlogSection";
+import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 import Pillars from "./components/PillarsSection";
@@ -31,6 +33,8 @@ export default function Home() {
       <SupportSection />
       <Testimonials />
       <TeamSection />
+      <BlogSection />
+      <Footer/>
     </div>
   );
 }

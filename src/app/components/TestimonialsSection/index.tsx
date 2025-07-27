@@ -79,7 +79,7 @@ const Testimonials = () => {
               setActiveIndex(index);
               swiperInstance?.slideTo(index);
             }}
-            className={`relative w-20 h-20 rounded-full overflow-hidden border-4 transition-all duration-300 ${index === activeIndex ? 'border-lemon scale-110' : 'border-transparent'}`}
+            className={`relative w-17 h-17  md:w-20 md:h-20 rounded-full overflow-hidden border-4 transition-all duration-300 ${index === activeIndex ? 'border-lemon scale-110' : 'border-transparent'}`}
             aria-label={`Go to ${testimonial.name}'s review`}
           >
             <Image
@@ -106,7 +106,7 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="testi-slide flex flex-col items-center text-center space-y-8 px-4 p-8 rounded-xl shadow-sm">
+              <div className="testi-slide flex flex-col items-center text-center space-y-8 px-4 p-8 rounded-xl ">
                 <div className="quote-icon text-lemon text-4xl opacity-80">
                   <FontAwesomeIcon icon={faQuoteLeft} />
                 </div>

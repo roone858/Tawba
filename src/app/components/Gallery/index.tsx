@@ -5,7 +5,7 @@ import GlareHover from "../GlareHover";
 const Gallery = () => {
   return (
     <section>
-      <div className="mx-auto py-28 px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto py-12 pb-0 px-4 sm:px-6 lg:px-10">
         <div className="img-box4">
           <div className="flex w-full flex-col sm:flex-row gap-8">
             <div className="img-wrapp flex flex-col flex-1/2 gap-8">

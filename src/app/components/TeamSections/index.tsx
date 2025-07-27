@@ -2,7 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -17,8 +21,8 @@ const TeamSection = () => {
       social: {
         facebook: "#",
         instagram: "#",
-        linkedin: "#"
-      }
+        linkedin: "#",
+      },
     },
     {
       id: 2,
@@ -28,8 +32,8 @@ const TeamSection = () => {
       social: {
         facebook: "#",
         instagram: "#",
-        linkedin: "#"
-      }
+        linkedin: "#",
+      },
     },
     {
       id: 3,
@@ -39,8 +43,8 @@ const TeamSection = () => {
       social: {
         facebook: "#",
         instagram: "#",
-        linkedin: "#"
-      }
+        linkedin: "#",
+      },
     },
     {
       id: 4,
@@ -50,9 +54,9 @@ const TeamSection = () => {
       social: {
         facebook: "#",
         instagram: "#",
-        linkedin: "#"
-      }
-    }
+        linkedin: "#",
+      },
+    },
   ];
 
   return (
@@ -75,7 +79,7 @@ const TeamSection = () => {
         </h1>
       </header>
 
-      <div className="team-slider px-4">
+      <div className="team-slider ">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={30}
@@ -86,10 +90,10 @@ const TeamSection = () => {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView:1,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             1024: {
               slidesPerView: 3,
@@ -99,29 +103,54 @@ const TeamSection = () => {
         >
           {teamMembers.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="card bg-deep-steel rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div
+                className="card  rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="image-container relative w-full h-90">
-                  <Image 
-                    src={member.image} 
+                  <Image
+                    src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
-                <div className="card-content p-6 py-10 text-center space-y-5 ">
-                  <h2 className="text-white text-xl font-bold ">{member.name}</h2>
-                  <p className="text-gray-300 text-sm ">{member.title}</p>
-                  
-                  <div className="social-media flex justify-center gap-4">
-                    <a href={member.social.facebook} className="text-white hover:text-lemon transition-colors">
-                      <FontAwesomeIcon icon={faFacebook} size="lg" />
+                <div className="card-content p-6 py-10 text-center space-y-2 group hover:bg-lemon  bg-deep-steel bg-contain bg-[url('/team-shape.png')] hover:bg-[url('/team-shape-hover.png')] ">
+                  <h2 className="text-white text-xl group-hover:text-title font-bold ">
+                    {member.name}
+                  </h2>
+                  <p className="text-gray-300 group-hover:text-title text-sm ">{member.title}</p>
+
+                  <div className="social-media text-white group-hover:text-title flex justify-center gap-4">
+                    <a
+                      href={member.social.facebook}
+                      className="   hover:text-lemon transition-colors"
+                    >
+                      <FontAwesomeIcon
+                        icon={faFacebook}
+                        size="sm"
+                        className="rounded-full border border-white/75 p-2.5  aspect-square"
+                      />
                     </a>
-                    <a href={member.social.instagram} className="text-white hover:text-lemon transition-colors">
-                      <FontAwesomeIcon icon={faInstagram} size="lg" />
+                    <a
+                      href={member.social.instagram}
+                      className="   hover:text-lemon transition-colors"
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        size="sm"
+                        className="rounded-full border border-white/75 p-2.5  aspect-square"
+                      />
                     </a>
-                    <a href={member.social.linkedin} className="text-white hover:text-lemon transition-colors">
-                      <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                    <a
+                      href={member.social.linkedin}
+                      className="  hover:text-lemon transition-colors"
+                    >
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        size="sm"
+                        className="rounded-full border border-white/75 p-2.5  aspect-square"
+                      />
                     </a>
                   </div>
                 </div>
