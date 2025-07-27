@@ -2,6 +2,7 @@ import About from "./components/AboutSection";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 import Pillars from "./components/PillarsSection";
+import ServicesSection from "./components/ServicesSection";
 import Slider from "./components/Slider";
 import TopBar from "./components/TopBar";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Gallery />
       <About />
       <Pillars />
+      <ServicesSection/>
     </div>
   );
 }
