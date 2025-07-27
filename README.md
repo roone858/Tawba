@@ -5,7 +5,7 @@
 
 ## 🌐 رابط التطبيق الحي | Live Demo
 **تم النشر على Vercel:**  
-🔗 [https://tawba.vercel.app](https://tawba-center.vercel.app)
+🔗 [https://tawba.vercel.app](https://tawba.vercel.app)
 
 ## لقطة الشاشة | Screenshot
 
