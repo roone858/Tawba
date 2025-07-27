@@ -5,6 +5,7 @@ import Pillars from "./components/PillarsSection";
 import ServicesSection from "./components/ServicesSection";
 import Slider from "./components/Slider";
 import SupportSection from "./components/SupportSection";
+import TeamSection from "./components/TeamSections";
 import Testimonials from "./components/TestimonialsSection";
 import TopBar from "./components/TopBar";
 
@@ -29,6 +30,7 @@ export default function Home() {
       <ServicesSection />
       <SupportSection />
       <Testimonials />
+      <TeamSection />
     </div>
   );
 }
