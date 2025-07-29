@@ -50,7 +50,7 @@ const Testimonials = () => {
   return (
     <div
       style={{ backgroundImage: "url(/testi_bg_shape.png)" }}
-      className="mx-auto py-16 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#F1F3F5] relative"
+      className="mx-auto py-16 md:py-14 px-4 sm:px-6 lg:px-10 bg-[#F1F3F5] relative"
     >
       <header className="flex flex-col justify-center gap-3 md:gap-5 items-center mb-24">
         <div className="flex gap-2 items-center text-center">

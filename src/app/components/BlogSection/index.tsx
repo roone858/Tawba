@@ -61,7 +61,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="mx-auto py-16 md:py-28 px-4 sm:px-6 lg:px-10 space-y-20">
+    <div className="mx-auto py-16  px-4 sm:px-6 lg:px-10 space-y-20">
       <header className="flex flex-col justify-center gap-3 md:gap-5 items-center mb-16">
         <div className="flex gap-2 items-center text-center">
           <Image

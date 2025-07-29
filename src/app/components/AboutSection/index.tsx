@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="mx-auto py-16 md:py-28 px-4 sm:px-6 lg:px-10 space-y-10">
+    <div className="mx-auto py-16  px-4 sm:px-6 lg:px-10 space-y-10">
       <header className="space-y-6 md:space-y-8">
         <div className="flex gap-2 items-center">
           <Image src={"sub-title2.svg"} alt="أيقونة" width={18} height={18} />
